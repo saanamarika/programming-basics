@@ -41,17 +41,35 @@ namespace Task_4
                         Console.WriteLine($"{numberX} {numberY} {numberZ}");
                     }
                     else
+                    {
+                        Console.WriteLine($"{numberX} {numberZ} {numberY}");
+                    }
                 }
                 else
                 {
-                    Console.WriteLine($"{num}")
+                    Console.WriteLine($"{numberZ} {numberX} {numberY}");
                 }
             }
-            else(numberX<numberZ)
+            else
             {
-                Console.WriteLine($"{}")
+                if (numberX < numberZ)
+                {
+                    Console.WriteLine($"{numberY} {numberX} {numberZ}");
+                }
+                else
+                {
+                    if(numberY<numberZ)
+                    {
+                        Console.WriteLine($"{numberY} {numberZ} {numberX}");
+                    }
+                    else
+                    {
+                        Console.WriteLine($"{numberZ} {numberY} {numberX}");
+                    }
+                }
+          
             
-            }
+            } Console.ReadKey();
 
         }
     }
