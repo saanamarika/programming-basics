@@ -6,12 +6,14 @@ namespace conditional_stament
     {
         static void Main(string[] args)
         {
+            Console.OutputEncoding = System.Text.Encoding.UTF8;
+
             // define instructions
             Console.WriteLine("Ohjelma tulostaa positiivinen, negatiivinen tai nolla");
             bool isNumber;
             do
             {
-                Console.Write("Syota luku: ");
+                Console.Write("Syötä luku: ");
                 // define variables
                 string userInput;
                 userInput = Console.ReadLine();
@@ -37,7 +39,7 @@ namespace conditional_stament
                 }
                 else
                 {
-                    Console.WriteLine("Syotit muuta kuin numeroita!");
+                    Console.WriteLine("Syötit muuta kuin numeroita!");
                 }
             } while (isNumber == false);
             Console.ReadKey();
