@@ -45,10 +45,12 @@ namespace Task_4
                         if (isNumber == true)
                         {
 
-
-                            Console.Write("Syötä luku 3/3: ");
                             do
                             { 
+
+                            Console.Write("Syötä luku 3/3: ");
+                           
+                             
 
 
                             userInput = Console.ReadLine();
