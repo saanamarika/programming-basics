@@ -9,71 +9,133 @@ namespace Task_4
             Console.OutputEncoding = System.Text.Encoding.UTF8;
 
             Console.WriteLine("Ohjelma lajittelee luvut nousevaan järjestykseen. Anna ohjelmalle kolme lukua");
+            bool isNumber;
+            do
+            { 
+
             Console.Write("Syötä luku 1/3: ");
+
+
             // define variables
             string userInput;
             userInput = Console.ReadLine();
+          
+            
+            
 
-            int numberX;
-            int.TryParse(userInput, out numberX);
 
-            Console.Write("Syötä luku 2/3: ");
-
-            userInput = Console.ReadLine();
-
-            int numberY;
-            int.TryParse(userInput, out numberY);
-
-            Console.Write("Syötä luku 3/3: ");
-
-            userInput = Console.ReadLine();
-
-            int numberZ;
-            int.TryParse(userInput, out numberZ);
-
-            if (numberX < numberY)
-            {
-                if (numberX < numberZ)
+                int numberX;
+                int.TryParse(userInput, out numberX);
+                isNumber = int.TryParse(userInput, out numberX);
+                if (isNumber == true)
                 {
+                    do
+                    { 
 
-                    if (numberY < numberZ)
-                    {
-                        Console.WriteLine($"{numberX} {numberY} {numberZ}");
+
+                    Console.Write("Syötä luku 2/3: ");
+
+                    userInput = Console.ReadLine();
+                    
+                    
+
+                        int numberY;
+                        int.TryParse(userInput, out numberY);
+                        isNumber = int.TryParse(userInput, out numberY);
+                        if (isNumber == true)
+                        {
+
+
+                            Console.Write("Syötä luku 3/3: ");
+                            do
+                            { 
+
+
+                            userInput = Console.ReadLine();
+                            
+                            
+
+
+                                int numberZ;
+                                int.TryParse(userInput, out numberZ);
+                                isNumber = int.TryParse(userInput, out numberZ);
+
+                                if (isNumber == true)
+                                {
+
+
+                                    if (numberX < numberY)
+                                    {
+                                        if (numberX < numberZ)
+                                        {
+
+                                            if (numberY < numberZ)
+                                            {
+                                                Console.WriteLine($"{numberX} {numberY} {numberZ}");
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine($"{numberX} {numberZ} {numberY}");
+                                            }
+                                        }
+                                        else
+                                        {
+                                            Console.WriteLine($"{numberZ} {numberX} {numberY}");
+                                        }
+                                    }
+                                    else
+                                    {
+                                        if (numberX < numberZ)
+                                        {
+                                            Console.WriteLine($"{numberY} {numberX} {numberZ}");
+                                        }
+                                        else
+                                        {
+                                            if (numberY < numberZ)
+                                            {
+                                                Console.WriteLine($"{numberY} {numberZ} {numberX}");
+                                            }
+                                            else
+                                            {
+                                                Console.WriteLine($"{numberZ} {numberY} {numberX}");
+                                            }
+                                        }
+                                    }
+                                }
+                                else
+                                {
+                                    Console.WriteLine("Syötit muuta kuin numeroita!");
+                                }
+                            }
+                            while (isNumber == false);
+                        }
+                        else
+                        {
+                            Console.WriteLine("Syötit muuta kuin numeroita!");
+                        }
                     }
-                    else
-                    {
-                        Console.WriteLine($"{numberX} {numberZ} {numberY}");
-                    }
+                    while (isNumber == false);
                 }
                 else
                 {
-                    Console.WriteLine($"{numberZ} {numberX} {numberY}");
+                    Console.WriteLine("Syötit muuta kuin numeroita!");
                 }
             }
-            else
-            {
-                if (numberX < numberZ)
-                {
-                    Console.WriteLine($"{numberY} {numberX} {numberZ}");
-                }
-                else
-                {
-                    if (numberY < numberZ)
-                    {
-                        Console.WriteLine($"{numberY} {numberZ} {numberX}");
-                    }
-                    else
-                    {
-                        Console.WriteLine($"{numberZ} {numberY} {numberX}");
-                    }
-                }
-
-
-            }
+            while (isNumber == false);
             Console.ReadKey();
-
-
-
         }
+        
+
     }
 }
+        
+
+
+
+
+
+
+
+
+
+  
