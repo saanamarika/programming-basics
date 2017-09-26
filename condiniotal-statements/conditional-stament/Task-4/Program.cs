@@ -18,7 +18,7 @@ namespace Task_4
             int.TryParse(userInput, out numberX);
 
             Console.Write("Syötä luku 2/3: ");
-          
+
             userInput = Console.ReadLine();
 
             int numberY;
@@ -31,10 +31,10 @@ namespace Task_4
             int numberZ;
             int.TryParse(userInput, out numberZ);
 
-            if(numberX < numberY)
+            if (numberX < numberY)
             {
                 if (numberX < numberZ)
-                { 
+                {
 
                     if (numberY < numberZ)
                     {
@@ -58,7 +58,7 @@ namespace Task_4
                 }
                 else
                 {
-                    if(numberY<numberZ)
+                    if (numberY < numberZ)
                     {
                         Console.WriteLine($"{numberY} {numberZ} {numberX}");
                     }
@@ -67,10 +67,11 @@ namespace Task_4
                         Console.WriteLine($"{numberZ} {numberY} {numberX}");
                     }
                 }
-          
-            
-            } Console.ReadKey();
-         
+
+
+            }
+            Console.ReadKey();
+
 
 
         }
