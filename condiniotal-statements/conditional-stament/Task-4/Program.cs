@@ -14,15 +14,14 @@ namespace Task_4
             { 
 
             Console.Write("Syötä luku 1/3: ");
-
-
+                
             // define variables
             string userInput;
             userInput = Console.ReadLine();
-          
-            
-            
 
+                //string numero1 = Console.ReadLine();
+
+                //int numx = int.Parse(numero1);
 
                 int numberX;
                 int.TryParse(userInput, out numberX);
@@ -30,47 +29,33 @@ namespace Task_4
                 if (isNumber == true)
                 {
                     do
-                    { 
-
+                    {
 
                     Console.Write("Syötä luku 2/3: ");
-
                     userInput = Console.ReadLine();
-                    
-                    
 
                         int numberY;
                         int.TryParse(userInput, out numberY);
                         isNumber = int.TryParse(userInput, out numberY);
                         if (isNumber == true)
                         {
-
                             do
-                            { 
+                            {
 
                             Console.Write("Syötä luku 3/3: ");
                            
-                             
-
-
                             userInput = Console.ReadLine();
-                            
-                            
-
-
+                           
                                 int numberZ;
                                 int.TryParse(userInput, out numberZ);
                                 isNumber = int.TryParse(userInput, out numberZ);
 
                                 if (isNumber == true)
                                 {
-
-
                                     if (numberX < numberY)
                                     {
                                         if (numberX < numberZ)
                                         {
-
                                             if (numberY < numberZ)
                                             {
                                                 Console.WriteLine($"{numberX} {numberY} {numberZ}");
