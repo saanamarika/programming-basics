@@ -10,6 +10,8 @@ namespace If2
             Console.WriteLine("Maatalousnäyttelyn lipunhinta");
 
             Console.Write("Nimi: ");
+            Console.ReadLine();
+
 
             int discount = 0;
             int price = 16;
@@ -45,30 +47,36 @@ namespace If2
                     discounted = true;
                 }
 
+
+
                 Console.WriteLine("Oletko Mtk:n jäsen? Y/N");
                 string mtkResponse = Console.ReadLine();
                 if (mtkResponse == "Y" || mtkResponse == "y" && discounted == false)
                 {
-                    discount = 15;
-                    discounted = true;
+                        discount = 15;
+                        discounted = true;
                 }
+
 
                 Console.WriteLine("Oletko opiskelija: Y/N");
                 string studentResponse = Console.ReadLine();
-                if (conscriptResponse == "Y" || conscriptResponse == "y" && discounted == false)
+                if (studentResponse == "Y" || studentResponse == "y" && discounted == false)
                 {
-                    discount = 45;
-                    discounted = true;
+                        discount = 45;
+                        discounted = true;
                 }
+                   
 
                 //erikoisehto
                 if (mtkResponse == "Y" || mtkResponse == "y")
                 {
-                    if (studentResponse == "Y" || studentResponse == "y")
-                    {
-                        discount = 15 + 45;
-                    }
+                        if (studentResponse == "Y" || studentResponse == "y")
+                        {
+                            discount = 15 + 45;
+                        }
                 }
+
+                
 
 
             }
@@ -76,17 +84,20 @@ namespace If2
             decimal lopullinen = (price * Convert.ToDecimal(discount / 100m));
 
             Console.WriteLine("Lippusi hinta on: " + lopullinen);
+            Console.WriteLine("Tervetuloa!");
             Console.ReadKey();
+
         }
 
     }
-
-
-
-
-
-
 }
+
+
+
+
+
+
+
 
 
 
