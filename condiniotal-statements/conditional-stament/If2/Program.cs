@@ -11,8 +11,8 @@ namespace If2
 
             Console.Write("Nimi: ");
 
-            int discount= 0;
-            int price= 16;
+            int discount = 0;
+            int price = 16;
             bool discounted = false;
 
             Console.Write("ikä: ");
@@ -49,22 +49,22 @@ namespace If2
                 string mtkResponse = Console.ReadLine();
                 if (mtkResponse == "Y" || mtkResponse == "y" && discounted == false)
                 {
-                       discount = 15;
-                       discounted = true;
+                    discount = 15;
+                    discounted = true;
                 }
-                   
-                 Console.WriteLine("Oletko opiskelija: Y/N");
+
+                Console.WriteLine("Oletko opiskelija: Y/N");
                 string studentResponse = Console.ReadLine();
                 if (conscriptResponse == "Y" || conscriptResponse == "y" && discounted == false)
                 {
-                      discount = 45;
-                      discounted = true;
+                    discount = 45;
+                    discounted = true;
                 }
 
                 //erikoisehto
-                if (mtkResponse=="Y" || mtkResponse == "y")
+                if (mtkResponse == "Y" || mtkResponse == "y")
                 {
-                    if (studentResponse == "Y"||studentResponse == "y")
+                    if (studentResponse == "Y" || studentResponse == "y")
                     {
                         discount = 15 + 45;
                     }
@@ -72,21 +72,21 @@ namespace If2
 
 
             }
+            //lopullisen hinnan laskeminen
+            decimal lopullinen = (price * Convert.ToDecimal(discount / 100m));
 
-
-
+            Console.WriteLine("Lippusi hinta on: " + lopullinen);
+            Console.ReadKey();
         }
-        //lopullisen hinnan laskeminen
-        decimal lopullinen = (price * Convert.ToDecimal(discount / 100m));
-
-            Console.Writeline("Lippusi hinta on: " + lopullinen);
-            Console.Readkey();
-
-
-
-
 
     }
+
+
+
+
+
+
+}
 
 
 
