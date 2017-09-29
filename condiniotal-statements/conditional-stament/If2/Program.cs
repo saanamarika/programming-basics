@@ -7,30 +7,104 @@ namespace If2
         static void Main(string[] args)
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
-            Console.WriteLine("Maatalouskyselyn lipunhinta");
+            Console.WriteLine("Maatalousnäyttelyn lipunhinta");
 
-            Console.Write("Kirjoita koko nimesi:");
-            string userInput;
-            userInput = Console.ReadLine();
+            Console.Write("Nimi: ");
 
-            Console.Write("Ikä:");
-            userInput = Console.ReadLine();
+            int discount= 0;
+            int price= 16;
+            bool discounted = false;
 
-            Console.Write("Mtk:");
-            userInput = Console.ReadLine();
+            Console.Write("ikä: ");
+            int age = int.Parse(Console.ReadLine());
 
-            Console.Write("Varusmies:");
-            userInput = Console.ReadLine();
+            if (age < 7)
+            {
+                discount = 100;
+                discounted = true;
+            }
+            else if (age >= 7 && age <= 15 && discounted == false)
+            {
+                discount = 50;
+                discounted = true;
+            }
+            else if (age >= 65 && discounted == false)
+            {
+                discount = 50;
+                discounted = true;
+            }
 
-            Console.Write("Opiskelija:");
-            userInput = Console.ReadLine();
+            //muut alennukset
+            if (age > 15 && age < 65)
+            {
+                Console.WriteLine("Oletko varusmies? Y/N");
+                string conscriptResponse = Console.ReadLine();
+                if (conscriptResponse == "Y" || conscriptResponse == "y" && discounted == false)
+                {
+                    discount = 50;
+                    discounted = true;
+                }
+
+                Console.WriteLine("Oletko Mtk:n jäsen? Y/N");
+                string mtkResponse = Console.ReadLine();
+                if (mtkResponse == "Y" || mtkResponse == "y" && discounted == false)
+                {
+                       discount = 15;
+                       discounted = true;
+                }
+                   
+                 Console.WriteLine("Oletko opiskelija: Y/N");
+                string studentResponse = Console.ReadLine();
+                if (conscriptResponse == "Y" || conscriptResponse == "y" && discounted == false)
+                {
+                      discount = 45;
+                      discounted = true;
+                }
+
+                //erikoisehto
+                if (mtkResponse=="Y" || mtkResponse == "y")
+                {
+                    if (studentResponse == "Y"||studentResponse == "y")
+                    {
+                        discount = 15 + 45;
+                    }
+                }
 
 
-
+            }
 
 
 
         }
-        
+        //lopullisen hinnan laskeminen
+        decimal lopullinen = (price * Convert.ToDecimal(discount / 100m));
+
+            Console.Writeline("Lippusi hinta on: " + lopullinen);
+            Console.Readkey();
+
+
+
+
+
     }
-}
+
+
+
+
+            
+                
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
