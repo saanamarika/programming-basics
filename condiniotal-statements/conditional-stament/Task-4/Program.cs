@@ -109,6 +109,7 @@ namespace Task_4
                 }
             }
             while (isNumber == false);
+            Console.WriteLine("Hyvää päivänjatkoa!");
             Console.ReadKey();
         }
         
