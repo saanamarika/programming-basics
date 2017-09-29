@@ -13,7 +13,7 @@ namespace If2
             Console.ReadLine();
 
 
-            int discount = 0;
+            int discount = 100;
             int price = 16;
             bool discounted = false;
 
@@ -72,7 +72,7 @@ namespace If2
                 {
                         if (studentResponse == "Y" || studentResponse == "y")
                         {
-                            discount = 15 + 45;
+                            discount = 45 + 15;
                         }
                 }
 
