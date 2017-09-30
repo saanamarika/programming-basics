@@ -13,7 +13,7 @@ namespace If2
             Console.ReadLine();
 
 
-            int discount = 100;
+            int discount = 0;
             int price = 16;
             bool discounted = false;
 
@@ -46,34 +46,38 @@ namespace If2
                     discount = 50;
                     discounted = true;
                 }
-
-
-
-                Console.WriteLine("Oletko Mtk:n jäsen? Y/N");
-                string mtkResponse = Console.ReadLine();
-                if (mtkResponse == "Y" || mtkResponse == "y" && discounted == false)
+                else
                 {
+
+
+
+
+                    Console.WriteLine("Oletko Mtk:n jäsen? Y/N");
+                    string mtkResponse = Console.ReadLine();
+                    if (mtkResponse == "Y" || mtkResponse == "y" && discounted == false)
+                    {
                         discount = 15;
                         discounted = true;
-                }
+                    }
 
 
-                Console.WriteLine("Oletko opiskelija: Y/N");
-                string studentResponse = Console.ReadLine();
-                if (studentResponse == "Y" || studentResponse == "y" && discounted == false)
-                {
+                    Console.WriteLine("Oletko opiskelija: Y/N");
+                    string studentResponse = Console.ReadLine();
+                    if (studentResponse == "Y" || studentResponse == "y" && discounted == false)
+                    {
                         discount = 45;
                         discounted = true;
-                }
-                   
+                    }
 
-                //erikoisehto
-                if (mtkResponse == "Y" || mtkResponse == "y")
-                {
+
+                    //erikoisehto
+                    if (mtkResponse == "Y" || mtkResponse == "y")
+                    {
                         if (studentResponse == "Y" || studentResponse == "y")
                         {
                             discount = 45 + 15;
                         }
+                    }
                 }
 
                 
@@ -81,7 +85,7 @@ namespace If2
 
             }
             //lopullisen hinnan laskeminen
-            decimal lopullinen = (price * Convert.ToDecimal(discount / 100m));
+            decimal lopullinen =(price-(price * Convert.ToDecimal(discount / 100m)));
 
             Console.WriteLine("Lippusi hinta on: " + lopullinen);
             Console.WriteLine("Tervetuloa!");
