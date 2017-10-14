@@ -8,18 +8,13 @@ namespace If2
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Maatalousnäyttelyn lipunhinta");
-
             Console.Write("Nimi: ");
             Console.ReadLine();
-
-
             int discount = 0;
             int price = 16;
             bool discounted = false;
-
             Console.Write("ikä: ");
             int age = int.Parse(Console.ReadLine());
-
             if (age < 7)
             {
                 discount = 100;
@@ -35,7 +30,6 @@ namespace If2
                 discount = 50;
                 discounted = true;
             }
-
             //muut alennukset
             if (age > 15 && age < 65)
             {
@@ -48,10 +42,6 @@ namespace If2
                 }
                 else
                 {
-
-
-
-
                     Console.WriteLine("Oletko Mtk:n jäsen? Y/N");
                     string mtkResponse = Console.ReadLine();
                     if (mtkResponse == "Y" || mtkResponse == "y" && discounted == false)
@@ -59,8 +49,6 @@ namespace If2
                         discount = 15;
                         discounted = true;
                     }
-
-
                     Console.WriteLine("Oletko opiskelija: Y/N");
                     string studentResponse = Console.ReadLine();
                     if (studentResponse == "Y" || studentResponse == "y" && discounted == false)
@@ -68,8 +56,6 @@ namespace If2
                         discount = 45;
                         discounted = true;
                     }
-
-
                     //erikoisehto
                     if (mtkResponse == "Y" || mtkResponse == "y")
                     {
@@ -78,15 +64,10 @@ namespace If2
                             discount = 45 + 15;
                         }
                     }
-                }
-
-                
-
-
+                }       
             }
             //lopullisen hinnan laskeminen
             decimal lopullinen =(price-(price * Convert.ToDecimal(discount / 100m)));
-
             Console.WriteLine("Lippusi hinta on: " + lopullinen);
             Console.WriteLine("Tervetuloa!");
             Console.ReadKey();
