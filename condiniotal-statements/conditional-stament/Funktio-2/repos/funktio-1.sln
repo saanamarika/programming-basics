@@ -7,6 +7,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "funktio-1", "funktio-1\funk
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktio-2", "Funktio-2\Funktio-2.csproj", "{81F97A54-02C7-4DC0-A2F5-2CF794E0DF28}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktio-3", "Funktio-3\Funktio-3.csproj", "{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{81F97A54-02C7-4DC0-A2F5-2CF794E0DF28}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{81F97A54-02C7-4DC0-A2F5-2CF794E0DF28}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{81F97A54-02C7-4DC0-A2F5-2CF794E0DF28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
