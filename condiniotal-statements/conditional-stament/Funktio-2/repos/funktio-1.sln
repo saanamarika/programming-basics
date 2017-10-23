@@ -5,11 +5,11 @@ VisualStudioVersion = 15.0.26730.16
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "funktio-1", "funktio-1\funktio-1.csproj", "{5DCB00DB-37A7-4484-AA9E-0CF13D898EF6}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktio-2", "Funktio-2\Funktio-2.csproj", "{81F97A54-02C7-4DC0-A2F5-2CF794E0DF28}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funktio-2", "Funktio-2\Funktio-2.csproj", "{81F97A54-02C7-4DC0-A2F5-2CF794E0DF28}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktio-3", "Funktio-3\Funktio-3.csproj", "{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funktio-3", "Funktio-3\Funktio-3.csproj", "{FA6C7825-2C5F-4E99-8E9C-5C5E2959A9D9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Funktio-4", "Funktio-4\Funktio-4.csproj", "{461E6845-7131-492E-9EB8-BBEFA7023087}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Funktio-4", "Funktio-4\Funktio-4.csproj", "{461E6845-7131-492E-9EB8-BBEFA7023087}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

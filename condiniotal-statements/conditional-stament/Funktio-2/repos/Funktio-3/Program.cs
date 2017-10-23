@@ -8,7 +8,7 @@ namespace Funktio_3
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma tarkistaa antamasi luvun onko se 1-10 väliltä, pyytää syöttämään uudelleen jos olet hölmö");
-            int retNumber = numberFromRange(-2, 10);
+            int retNumber = numberFromRange(1, 10);
             Console.WriteLine($"Syötit kelvollisen luvun.");
             Console.ReadKey();
            
@@ -21,7 +21,7 @@ namespace Funktio_3
             {
                 Console.Write($"Syötä luku {lowerBound}-{upperBound} väliltä: ");
                 numb = int.TryParse(Console.ReadLine(), out number);
-                if(!numb)
+                if(!numb||number<lowerBound||number>upperBound)
                 {
                     Console.WriteLine("Olet hölmö. ");
                 }
