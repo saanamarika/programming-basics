@@ -8,16 +8,36 @@ namespace Funktio_2
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma palauttaa arvonaan kahdesta luvusta pienemmän. Luvut välitetään funktiolle parametrinä");
-            Console.Write("Syötä luku 1/2: ");
-            int num1 = int.Parse(Console.ReadLine());
-            Console.Write("Syötä luku 2/2: ");
-            int num2 = int.Parse(Console.ReadLine());
-            Console.WriteLine(Minimi(num1, num2));
+            int number = 0;
+            bool num1 = false;
+            do
+            {
+                Console.Write("Syötä luku 1/2: ");
+                num1 = int.TryParse(Console.ReadLine(), out number);
+                if (!num1)
+                {
+                    Console.WriteLine("Olet hölmö.");
+                }
+            } while (!num1);
+            int numb = 0;
+            bool num2 = false;
+            do
+            {
+                Console.Write("Syötä luku 2/2: ");
+                num2 = int.TryParse(Console.ReadLine(), out numb);
+                if (!num2)
+                {
+                    Console.WriteLine("Olet hölmö.");
+                }
+            } while (!num2);
+
+            Console.WriteLine(Minimi(number, numb));
             Console.ReadKey();
 
 
 
         }
+        //string silloin, kun tulee tekstiä ja int kun määritellään numeroita
         static string Minimi(int x, int y)
         {
             if (x<y)

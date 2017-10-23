@@ -24,7 +24,7 @@ namespace Funktio_4
                     num = int.TryParse(Console.ReadLine(), out int numero);
                     if (!num)
                     {
-                        Console.WriteLine("Väärä syöte, syötä positiivinen lukua!");
+                        Console.WriteLine("Väärä syöte, syötä positiivinen luku!");
                     }
                 }
                 while (!num);
