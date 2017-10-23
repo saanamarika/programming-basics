@@ -8,12 +8,16 @@ namespace funktio_1
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma antaa saman verran tähtiä kuin käyttäjän antama numero.");
+            //määritä int number ja bool num
             int number = 0;
+            bool num = false;
             do
             {
                 Console.Write("Syötä luku: ");
-                number = int.Parse(Console.ReadLine());
-                if (number < 0)
+                //muista että jos käytät bool:ia niin laita bool ensin ja int out:in jälkeen
+                num = int.TryParse(Console.ReadLine(), out number);
+                // !num << tarkistetaan onko false vai true
+                if (number < 0 || !num)
                 {
                     Console.WriteLine("Väärä syöte!");
                 }
@@ -22,7 +26,7 @@ namespace funktio_1
                     Console.WriteLine(Stars(number));
                 }
             }
-            while (number<0);
+            while (number<0 || !num);
             Console.ReadKey();
 
 
