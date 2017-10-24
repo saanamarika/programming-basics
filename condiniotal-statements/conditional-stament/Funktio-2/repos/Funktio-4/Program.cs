@@ -8,10 +8,12 @@ namespace Funktio_4
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma pyytää sinua syöttämään 10 positiivista kokonaislukua, sen jälkeen se kertoo sinulle mitä syötit ja mikä niistä oli suurin");
+            //silloin voi tulostaa funktion ilman arvoa
             Console.WriteLine(Numbers());
             Console.ReadKey();
 
         }
+        //ei välttämättä tarvitse arvoa
         static string Numbers()
         {
             Console.WriteLine("Syötä 10 positiivista kokonaislukua");
@@ -32,6 +34,7 @@ namespace Funktio_4
                     }
                     if (big<numero)
                     {
+                        //muista aina määrittää tekijä
                         big = numero;
                         indexOfBig = i;
                     }
