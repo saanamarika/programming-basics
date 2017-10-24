@@ -8,27 +8,39 @@ namespace Funktio_4
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma pyytää sinua syöttämään 10 positiivista kokonaislukua, sen jälkeen se kertoo sinulle mitä syötit ja mikä niistä oli suurin");
-
-
+            Console.WriteLine(Numbers());
+            Console.ReadKey();
 
         }
-        static int Numbers(int userInput)
+        static string Numbers()
         {
             Console.WriteLine("Syötä 10 positiivista kokonaislukua");
-            for (int i = 0; i <= 10; i++)
+            int numero = 0;
+            int big = 0;
+            int indexOfBig = 0;
+            string numberLine ="";
+            for (int i = 1; i <= 10; i++)
             {
                 bool num = false;
                 do
                 {
                     Console.Write($"{i}. ");
-                    num = int.TryParse(Console.ReadLine(), out int numero);
-                    if (!num)
+                    num = int.TryParse(Console.ReadLine(), out numero);
+                    if (!num||numero<=0)
                     {
                         Console.WriteLine("Väärä syöte, syötä positiivinen luku!");
                     }
+                    if (big<numero)
+                    {
+                        big = numero;
+                        indexOfBig = i;
+                    }
                 }
-                while (!num);
+                while (!num||numero<=0);
+                numberLine += ($"{numero} ");
             }
+            Console.WriteLine($"Syötit seuraavat luvut:\n{numberLine}");
+            return ($"Suurin {big} oli {indexOfBig}. luku");
         }
     }
 }
