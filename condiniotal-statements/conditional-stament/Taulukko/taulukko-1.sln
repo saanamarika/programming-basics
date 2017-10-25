@@ -9,6 +9,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "lotto", "..\lotto\lotto.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taulukko-3", "Taulukko-3\Taulukko-3.csproj", "{937A944B-CDB0-44C6-8E40-C0AF7685DD65}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taulukko-4", "taulukko-4\taulukko-4.csproj", "{F00736B2-B00E-45C0-B15A-F02D3591B8AF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{937A944B-CDB0-44C6-8E40-C0AF7685DD65}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{937A944B-CDB0-44C6-8E40-C0AF7685DD65}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{937A944B-CDB0-44C6-8E40-C0AF7685DD65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

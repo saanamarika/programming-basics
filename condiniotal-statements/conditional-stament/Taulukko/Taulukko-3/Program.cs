@@ -11,11 +11,11 @@ namespace Taulukko_3
             Random rnd = new Random();
            
             int[] one = new int[10];
-            Console.WriteLine("[x]\tArvo");
+            Console.WriteLine("[x]=Arvo");
             for(int i=0; i<one.Length;i++)
             {
                 one[i] = rnd.Next(20);
-                Console.WriteLine($"[{i}]\t{one[i]:00}");
+                Console.WriteLine($"[{i}]={one[i]:00}");
             }
             Console.ReadKey();
         }
