@@ -11,6 +11,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taulukko-3", "Taulukko-3\Ta
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "taulukko-4", "taulukko-4\taulukko-4.csproj", "{F00736B2-B00E-45C0-B15A-F02D3591B8AF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Taulukko-5", "Taulukko-5\Taulukko-5.csproj", "{E82007E2-85E2-48FB-ACAF-D87DA0B928DF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -33,6 +35,10 @@ Global
 		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F00736B2-B00E-45C0-B15A-F02D3591B8AF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E82007E2-85E2-48FB-ACAF-D87DA0B928DF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E82007E2-85E2-48FB-ACAF-D87DA0B928DF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E82007E2-85E2-48FB-ACAF-D87DA0B928DF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E82007E2-85E2-48FB-ACAF-D87DA0B928DF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
