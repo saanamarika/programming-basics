@@ -67,7 +67,7 @@ namespace If2
                 }       
             }
             //lopullisen hinnan laskeminen
-            decimal lopullinen =(price-(price * Convert.ToDecimal(discount / 100m)));
+            decimal lopullinen =(price-(price * Convert.ToDecimal(discount / 100m)));   
             Console.WriteLine("Lippusi hinta on: " + lopullinen);
             Console.WriteLine("Tervetuloa!");
             Console.ReadKey();
