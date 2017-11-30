@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Doitagain
+namespace twosame
 {
     class Program
     {
@@ -27,3 +27,4 @@ namespace Doitagain
         }
     }
 }
+
