@@ -8,23 +8,22 @@ namespace Vokaali
         {
             Console.OutputEncoding = System.Text.Encoding.UTF8;
             Console.WriteLine("Ohjelma laskee syöttämäsi sanan tai lauseen vokaalien lukumäärän");
+            string voka = "AEIOUYÄÖ";
             Console.Write("Syötä data: ");
-            string voka = Console.ReadLine();
-            string voka2 = voka.ToUpperInvariant;
-            string voka7 = voka.Replace(" ", "");
-            int voka3 = voka.Length;
-             voka2 = voka.Replace("A","");
-             voka2 = voka.Replace("E", "");
-             voka2 = voka.Replace("I", "");
-             voka2 = voka.Replace("U", "");
-             voka2 = voka.Replace("Y", "");
-             voka2 = voka.Replace("Ä", "");
-             voka2 = voka.Replace("Ö", "");
+            string userInput = Console.ReadLine().ToUpper();
+            int sum = 0;
 
-            int voka5 = voka2.Length;
-            int voka6 = voka3 - voka5;
-
-            Console.WriteLine($"Syötteessä {voka} on {voka6} vokaalia");
+            for(int i=0;i<userInput.Length;i++)
+            {
+                for(int j=0;j<voka.Length;j++)
+                {
+                    if(userInput[i]==voka[j])
+                    {
+                        sum++;
+                    }
+                }          
+            }
+            Console.WriteLine($"Syötteessä {userInput} on {sum} vokaalia");
             Console.ReadLine();
         
         }
